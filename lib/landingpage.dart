@@ -13,7 +13,7 @@ class _LandingPageState extends State<LandingPage> {
   @override
   void initState() {
     Timer(const Duration(seconds: 3), () {
-      Get.offAll(const MainMenu());
+      Get.offAll(() => const MainMenu());
     });
 
     super.initState();
@@ -22,8 +22,7 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(
-      alignment: Alignment.center,
+        body: Column(
       children: [
         SizedBox(
             width: MediaQuery.of(context).size.width,

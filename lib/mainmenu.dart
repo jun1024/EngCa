@@ -32,7 +32,7 @@ class _ButtonState extends State<Buttons> {
         children: [
           ElevatedButton(
               onPressed: () {
-                Get.to(const WordCard());
+                Get.to(() => const WordCard());
               },
               style: const ButtonStyle(
                 elevation: MaterialStatePropertyAll(5),
